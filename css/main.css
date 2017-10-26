@@ -1,3 +1,43 @@
-/*
- * Estilos de tu proyecto
- */
+/*font-family: 'Montserrat', sans-serif; Botones, hover: `#FF00BF`, Fondo de `footer`: `#333447`, 
+Título del formulario: `#352384`, Texto del formulario: `#728099`, Gradiente morado: `linear-gradient(#76278F, #2B1E66); 
+enlazar hero desde css,  position: fixed; z-index: 3; para el nav solamente*/
+
+body { /*formato base del cuerpo*/
+  	font-family: 'Montserrat', sans-serif;
+  	margin: 0 auto;
+}
+
+/*Formato del header y sus elementos*/
+
+header { /*formato general del header, color de fondo*/
+  outline: 2px solid black;
+  background-image: url("../assets/images/hero.gif");
+  background-size: cover;
+  color: #FFFFFF;
+  margin: 0 auto;
+}
+
+.logo-w {
+	width: 4.31em;
+	height: 3em;
+	margin: 2.19em 0 0 5.44em;
+}
+
+header a { /*los elementos a se muestra como bloque en línea con sus respectivos margins*/
+  display: inline-block;
+  font-size: 1em;
+  margin-left: 2.75em;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  color: #FFFFFF; 
+  text-decoration: none;
+}
+
+header .large { /*margen de la primera palabra*/
+	padding-left: 41.4em;
+}
+
+header .login { /*para darle el borde al login*/
+  border: 0.1em solid white;
+  padding: 1em;
+}
