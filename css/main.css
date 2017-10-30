@@ -10,34 +10,320 @@ body { /*formato base del cuerpo*/
 /*Formato del header y sus elementos*/
 
 header { /*formato general del header, color de fondo*/
-  outline: 2px solid black;
   background-image: url("../assets/images/hero.gif");
   background-size: cover;
   color: #FFFFFF;
   margin: 0 auto;
 }
 
-.logo-w {
-	width: 4.31em;
-	height: 3em;
-	margin: 2.19em 0 0 5.44em;
+/*Formato de la subsección nav y sus elementos*/
+
+/*nav {para darle posición fixed a la barra de navegación, al bajarlo se pierde visualmente parte de la barra por ser del 
+mismo color sus elementos que el fondo. 
+  background-color: transparent;
+  position: fixed;
+  z-index: 3;
+}*/
+
+.logo-w { /*formato del logo blanco*/
+  width: 4.31em;
+  height: 3em;
+  margin: 2.19em 0 0 5.44em;
 }
 
-header a { /*los elementos a se muestra como bloque en línea con sus respectivos margins*/
+header nav a { /*los elementos a se muestran como bloque en línea con sus respectivos margins*/
   display: inline-block;
   font-size: 1em;
-  margin-left: 2.75em;
-  margin-top: 1.5em;
-  margin-bottom: 1.5em;
+  margin: 0 0 0 2.75em;
   color: #FFFFFF; 
   text-decoration: none;
 }
 
-header .large { /*margen de la primera palabra*/
-	padding-left: 41.4em;
+nav .large { /*margen de la primera palabra*/
+	padding-left: 33.4em;
 }
 
-header .login { /*para darle el borde al login*/
+nav .login { /*para darle el borde al login*/
   border: 0.1em solid white;
   padding: 1em;
+  margin: 0 9.9em 1em 2.75em;
+}
+
+nav .nav-hover:hover { /*para darle efecto cuando el mouse esté posado encima*/
+  color: #FF00BF;
+}
+
+/*Formato de la subsección box-w*/
+
+.box-w { /*formato general de la subsección box-w*/
+  background-color: #FFFFFF;
+  width: 33.75em;
+  height: 26.5em;  
+  padding-top: 2em;
+  margin: 1em 0 0 46em;
+}
+
+.box-w h1 { /*formato del h1 de la subsección box-w*/
+  padding: 1.5em 0 0.2em 1.6em;
+  margin: 0;
+  font-size: 2.5em;
+}
+
+.box-w h4 {/*formato de los h4 de la subsección box-w*/
+  font-weight: 200;
+  padding: 0 0 0 3.9em;
+  margin: 0;
+}
+
+.color-purple {/*cambio de color de h1 y del primer h4*/
+  color: #352384;
+}
+
+.box-w .box-transparent {/*formato de la caja del segundo h4*/
+  border-bottom: 0.1em solid #352384;
+  font-size: 0.8em;
+  padding: 2em 0 0.6em 0;
+  margin: 0 2.85em 2em 4.85em;
+}
+
+.box-w .button-fuchsia { /*formato del primer a*/
+  display: inline-block;
+  background-color: #FF00BF;
+  text-decoration: none;
+  color: #FFFFFF; 
+  font-size: 0.9em;
+  padding: 1.1em;
+  margin: 0 1.2em 0 4.3em;
+}
+
+.box-w .decoration { /*formato del segundo a*/
+  display: inline-block;
+  color: #728099;
+}
+
+.box-w .decoration:hover { /*para que cuando pase el mouse encima cambie de color*/
+  color: #DF01A5;
+} 
+
+.box-w .first-h6 { /*formato detallado del primer h6*/
+  font-weight: 200;
+  margin: 3em 0 1em 6em;
+}
+
+.box-w .last-h6 { /*formato detallado del último h6 de la subsección*/
+  font-weight: 200;
+  margin: 1em 0 1em 6em;
+}
+
+.color-grey { /*cambio de color del segundo h4 y de los dos h6*/
+  color: #c7c7c7;
+}
+
+.box-w .fuchsia { /*cambio de color de los elementos a de los h6*/
+  text-decoration: none;
+  color: #FF00BF;
+}
+
+.box-w .fuchsia:hover { /*para que cuando pase el mouse encima cambie de color y aparezca la linea de abajo*/
+  text-decoration: underline;
+  color: #DF01A5;   
+}
+
+/*Cambio de sección downgrade*/
+
+.downgrade { /*formato general de la sección downgrade*/
+  background: linear-gradient(#76278F, #2B1E66);
+  padding-top: 1em;
+  color: #FFFFFF;
+}
+
+.downgrade .column { /*formato para conseguir que las subsecciones sean bloques en línea*/
+  display: inline-block;
+}
+
+.downgrade .phrases { /*formato para títulos h2 y sus subtítulos h6*/
+  padding: 0 1em 0em 10em;
+}
+
+.downgrade h2 {/*formato detallado para los títulos*/
+  font-size: 1.8em;
+  padding-top: 1.6em;
+}
+
+.downgrade h4 { /*para que las letras se vean más delgadas*/
+  font-weight: 200;
+}
+
+.downgrade .last-happy { /*formato para último h6*/
+  padding-bottom: 5.5em;
+}
+
+.phone { /*formato detallado para imagen teléfono*/
+  width: 30.077em;
+  height: 32em;
+  padding: 0 1em 0 1em;
+}
+
+/*Formato general de las secciones watch*/
+
+.general-watch { /*para darle formato general a la sección*/
+  margin: 0;
+  padding: 0;
+  height: 31.5em;
+}
+
+.sub-watch { /*para darle formato general a la subsección*/
+  width: 28.22em;
+  height: 11em;
+}
+
+.general-watch .video { /*formato general de los videos de las 3 secciones watch*/
+  width: 50.45em;
+  height: 31.5em;
+}
+
+.videos-h5 { /*para darle formato a los h5 */
+  padding: 0.5em 0 0 4em;
+  margin-bottom: 0;
+}
+
+.videos-h2 { /*para darle formato a los título h2*/
+  font-weight: 900;
+  font-size: 1.7em;
+  margin-top: 0;
+  padding-left: 2em;
+}
+
+.videos-h4 { /*para darle formato a los h4*/
+  font-weight: 500;
+  padding-left: 3.3em;
+}
+
+/*Cambio de sección watch-a*/
+
+.amplify { /*para darle formato a la subsección*/
+  display: inline-block;
+}
+
+.video-a { /*para posicionar el video*/
+  float: right;  
+}
+
+/*Cambio de sección watch-b*/
+
+.video-b {  /*para posicionar el video (no conseguí que el video llegara al borde de su sección madre)*/
+  display: inline-block;
+}
+
+.june { /*para darle formato a la subsección (no conseguí que la subsecció llegara al borde de su sección madre)*/
+  float: right;
+  height: 12em;
+}
+
+/*cambio de sección watch-c*/
+
+.good-thing { /*para darle formato a la subsección*/
+  display: inline-block;
+}
+
+.video-c { /*para posicionar el video*/
+  float: right;  
+}
+
+/*cambio al footer*/
+
+footer { /*formato general del footer*/
+  color: #FFFFFF;
+  border-top: 1em solid #333447;
+  border-bottom: 1em solid #333447;
+  background-color: #333447;
+}
+
+.list { /*formato general de las subsecciones list*/
+  margin-top: 1.8em;
+  margin-left: 6em;
+  width: 11.25em;
+  height: 16em;
+  display: inline-block;
+} 
+
+footer .list a { /*formato general de los a*/
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+footer .list h3 { /*formato detallado de los h3*/
+  letter-spacing: 0.05em;
+}
+
+footer .list a h3:hover { /*para darle efecto cuando pose el mouse encima*/
+  text-decoration: underline;
+}
+
+footer .list h4 { /*formato detallado de los h4*/
+  padding: 0.4em 0 0.4em 0;
+  font-weight: 400;
+}
+
+footer .list a h4:hover {/*para darle efecto cuando pose el mouse encima*/
+  color: #DF01A5; 
+  text-decoration: underline;
+} 
+
+/*formato de la subseccion logos*/
+
+.logos { /*formato de la subsección de logos*/
+  margin-top: 1.75em;
+  margin-right: 9em;
+  width: 11.25em;
+  height: 16em;
+  float: right;
+}
+
+footer .logo-svg { /*para darle formato a los svg*/
+  width: 8.45em;
+}
+
+.logos .apple-store { /*para darle margen detallado al logo*/
+  margin-top: 2.5em
+}
+
+.logos .google-play { /*para darle margen detallado al logo*/
+  margin-top: 2.25em;
+}
+
+.logos .microsoft { /*para darle formato detallado al logo*/
+  height: 2.45em;
+  margin-top: 2.25em;
+  margin-bottom: 0.25em;
+}
+
+/*formato de la subsección social-nets*/
+
+footer .social-nets { /*formato de la subsección de redes sociales*/
+  text-align: left;
+  border-bottom: 0.1em solid #FFFFFF;
+  margin: 6em 12em 2em 20em;
+}
+
+footer .social-nets .fa { /*formato de los logos redes sociales*/
+  text-decoration: none;
+  color: #FFFFFF;
+  font-size: 1.2em;
+  margin-left: 3em;
+  margin-bottom: 1.6em;
+  padding: 0.5em;
+  border: 0.1em solid #FFFFFF;
+}
+
+footer .social-nets .fa-facebook { /*para posicionar los logos*/
+  margin-left: 10em;
+}
+
+/*formato subsección copyright*/
+
+footer div .copyright { /*para darle formato a la parte final del footer*/
+  text-align: center;
+  padding: 0.8em 0 0.5em 0;
+  font-weight: 100;
 }
